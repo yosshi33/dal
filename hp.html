@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAL | 公式ホームページ | 心揺さぶる生ライブパフォーマンス</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+        
+        .hero-image {
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        
+        .section {
+            padding: 5rem 0;
+        }
+        
+        .nav-link {
+            position: relative;
+            padding-bottom: 5px;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #fff;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .social-icon {
+            transition: transform 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            transform: translateY(-5px);
+        }
+        
+        .music-item {
+            transition: transform 0.3s ease;
+        }
+        
+        .music-item:hover {
+            transform: scale(1.03);
+        }
+        
+        .gradient-text {
+            background: linear-gradient(90deg, #ff6b6b, #ffb347);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <!-- ヒーローセクション -->
+    <div class="relative">
+        <div class="hero-image" style="background-image: url('https://page.genspark.site/v1/base64_upload/5f6a7baf7947b386e0dcd77a7e26f46d');">
+            <div class="overlay flex flex-col items-center justify-center">
+                <div class="container mx-auto text-center px-4">
+                    <h1 class="text-6xl font-bold mb-6 tracking-wider">DAL</h1>
+                    <p class="text-2xl mb-8 tracking-wide">心揺さぶる生ライブパフォーマンス</p>
+                    <div class="flex justify-center space-x-6">
+                        <a href="https://twitter.com/riju__official" target="_blank" class="social-icon">
+                            <i class="fab fa-twitter text-3xl hover:text-blue-400"></i>
+                        </a>
+                        <a href="https://www.instagram.com/dal.dal.official/" target="_blank" class="social-icon">
+                            <i class="fab fa-instagram text-3xl hover:text-pink-500"></i>
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=oJy12deKBaI" target="_blank" class="social-icon">
+                            <i class="fab fa-youtube text-3xl hover:text-red-600"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ナビゲーション -->
+    <nav class="bg-black py-4 sticky top-0 z-50 border-b border-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold">DAL</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#profile" class="nav-link">プロフィール</a>
+                    <a href="#music" class="nav-link">ミュージック</a>
+                    <a href="#live" class="nav-link">ライブ情報</a>
+                    <a href="#contact" class="nav-link">コンタクト</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- プロフィールセクション -->
+    <section id="profile" class="section">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-12 text-center gradient-text">プロフィール</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <img src="https://page.genspark.site/v1/base64_upload/30f06af9f3cb45b05c4b640aa129449b" alt="DAL" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <p class="text-lg mb-6 leading-relaxed">
+                        シンガーソングライターDALです。自身が受けた「痛み」を主に楽曲を描き、個性的な声とメロディーラインが特徴です。
+                    </p>
+                    <p class="text-lg mb-6 leading-relaxed">
+                        女の子と傷ついている人の味方として、心に響く歌と言葉で多くのリスナーを魅了しています。
+                    </p>
+                    <div class="text-gray-400 mb-4">
+                        <span class="mr-4"><i class="fab fa-twitter mr-2"></i>@riju__official</span>
+                        <span><i class="far fa-calendar mr-2"></i>Joined April 2019</span>
+                    </div>
+                    <div class="text-gray-400">
+                        <span class="mr-4"><i class="fab fa-instagram mr-2"></i>dal.dal.official</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ミュージックセクション -->
+    <section id="music" class="section bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-12 text-center gradient-text">ミュージック</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-black rounded-lg overflow-hidden shadow-lg music-item">
+                    <div class="relative pb-9/16">
+                        <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/oJy12deKBaI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <img src="semi.png" alt="DAL Live" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">蜩が声を失くしてしまう季節に</h3>
+                        <p class="text-gray-400 mb-4">作詞作曲: DAL</p>
+                        <p class="text-sm text-gray-500">
+                            生きる希望を持てない人に辛い環境から逃げ出す事で明日を生きれる事が伝えれるようにと願いを込めて作りました。
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bg-black rounded-lg overflow-hidden shadow-lg music-item">
+                    <img src="aka.jpg" alt="DAL Live" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">アカ</h3>
+                        <p class="text-gray-400 mb-4">2024年9月18日リリース</p>
+                        <p class="text-sm text-gray-500">
+                            赤ずきんちゃんをモチーフにしたオリジナル楽曲。グリム童話から着想を得た新作MVも公開中。
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bg-black rounded-lg overflow-hidden shadow-lg music-item">
+                    <img src="name.jpg" alt="DAL Selfie" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">なまえ</h3>
+                        <p class="text-gray-400 mb-4">作詞作曲: DAL</p>
+                        <p class="text-sm text-gray-500">
+                            保護犬、保護猫、その他の動物を助けてくださる保護動物団体の方に敬意を払い書き下ろした楽曲です。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ライブ情報セクション -->
+    <section id="live" class="section">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-12 text-center gradient-text">ライブ情報</h2>
+            <div class="bg-gray-900 rounded-lg p-8 mb-8">
+                <h3 class="text-2xl font-bold mb-4">書き下ろし企画「危機一髪」</h3>
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/2 mb-6 md:mb-0">
+                        <p class="mb-2"><i class="far fa-calendar-alt mr-2"></i>2025年5月22日(木)</p>
+                        <p class="mb-2"><i class="far fa-clock mr-2"></i>18:00開場&配信サイトオープン</p>
+                        <p class="mb-2"><i class="fas fa-map-marker-alt mr-2"></i>GRAPES KITASANDO</p>
+                        <p class="text-gray-400 mt-4">この日しかうたわない新曲を書き下ろします！テーマ《危機一髪》</p>
+                    </div>
+                    <div class="md:w-1/2 md:border-l md:border-gray-700 md:pl-8">
+                        <p class="mb-2"><i class="fas fa-ticket-alt mr-2"></i>前売り: ¥3,000 (1drink別)</p>
+                        <p class="mb-2"><i class="fas fa-video mr-2"></i>配信チケット: ¥2,000</p>
+                        <p class="mt-4">ご予約・お問い合わせはTwitterのDMにて受け付けております。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-gray-900 rounded-lg p-6">
+                    <h3 class="text-xl font-bold mb-3">お茶の水パルトネール</h3>
+                    <p class="mb-2"><i class="far fa-calendar-alt mr-2"></i>ライブ終了</p>
+                    <p class="text-gray-400">久々の曲もお届けしました！配信アーカイブもご覧いただけます。</p>
+                </div>
+                
+                <div class="bg-gray-900 rounded-lg p-6">
+                    <h3 class="text-xl font-bold mb-3">ミュージックレインボー</h3>
+                    <p class="mb-2"><i class="far fa-calendar-alt mr-2"></i>2025年4月20日</p>
+                    <p class="text-gray-400">トップバッターとして出演！</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- コンタクトセクション -->
+    <section id="contact" class="section bg-gray-900">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-12 gradient-text">コンタクト</h2>
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-12">
+                <a href="https://twitter.com/riju__official" target="_blank" class="flex flex-col items-center social-icon">
+                    <i class="fab fa-twitter text-5xl mb-3"></i>
+                    <span class="text-lg">@riju__official</span>
+                </a>
+                <a href="https://www.instagram.com/dal.dal.official/" target="_blank" class="flex flex-col items-center social-icon">
+                    <i class="fab fa-instagram text-5xl mb-3"></i>
+                    <span class="text-lg">dal.dal.official</span>
+                </a>
+                <a href="https://www.youtube.com/watch?v=oJy12deKBaI" target="_blank" class="flex flex-col items-center social-icon">
+                    <i class="fab fa-youtube text-5xl mb-3"></i>
+                    <span class="text-lg">YouTube Channel</span>
+                </a>
+            </div>
+            <p class="mt-12 text-gray-400">
+                出演依頼やコラボレーションなどのお問い合わせは、TwitterのDMにてお願いいたします。
+            </p>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="py-8 border-t border-gray-800">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-500">© 2025 DAL All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <style>
+        .pb-9/16 {
+            padding-bottom: 56.25%;
+        }
+    </style>
+</body>
+</html>
